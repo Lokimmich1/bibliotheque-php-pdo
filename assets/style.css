@@ -1,0 +1,241 @@
+@import url('https://fonts.googleapis.com/css2?family=Poppins:wght@300;400;500;600;700&display=swap');
+
+*{
+    margin:0;
+    padding:0;
+    box-sizing:border-box;
+    font-family:'Poppins',sans-serif;
+}
+
+body{
+    min-height:100vh;
+    background:
+    linear-gradient(rgba(15,23,42,0.85),rgba(15,23,42,0.9)),
+    url('https://images.unsplash.com/photo-1521587760476-6c12a4b040da?auto=format&fit=crop&w=1400&q=80');
+    background-size:cover;
+    background-position:center;
+    background-attachment:fixed;
+    padding:40px;
+    color:white;
+}
+
+.container{
+    width:95%;
+    max-width:1300px;
+    margin:auto;
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    backdrop-filter:blur(12px);
+    border-radius:25px;
+    padding:35px;
+    box-shadow:0 8px 32px rgba(0,0,0,0.4);
+    animation:fadeIn 1s ease;
+}
+
+@keyframes fadeIn{
+    from{
+        opacity:0;
+        transform:translateY(20px);
+    }
+    to{
+        opacity:1;
+        transform:translateY(0);
+    }
+}
+
+h1{
+    text-align:center;
+    margin-bottom:35px;
+    font-size:42px;
+    font-weight:700;
+    color:#38bdf8;
+    text-shadow:0 0 10px rgba(56,189,248,0.5);
+}
+
+.menu{
+    display:flex;
+    justify-content:center;
+    gap:20px;
+    flex-wrap:wrap;
+    margin-bottom:40px;
+}
+
+.btn{
+    padding:13px 24px;
+    border:none;
+    border-radius:12px;
+    text-decoration:none;
+    color:white;
+    font-weight:600;
+    letter-spacing:0.5px;
+    transition:0.3s ease;
+    display:inline-block;
+    cursor:pointer;
+    box-shadow:0 5px 15px rgba(0,0,0,0.2);
+}
+
+.btn:hover{
+    transform:translateY(-3px) scale(1.03);
+}
+
+.home{
+    background:linear-gradient(135deg,#3b82f6,#2563eb);
+}
+
+.home:hover{
+    box-shadow:0 0 20px rgba(59,130,246,0.5);
+}
+
+.add{
+    background:linear-gradient(135deg,#22c55e,#16a34a);
+}
+
+.add:hover{
+    box-shadow:0 0 20px rgba(34,197,94,0.5);
+}
+
+.edit{
+    background:linear-gradient(135deg,#f59e0b,#d97706);
+}
+
+.edit:hover{
+    box-shadow:0 0 20px rgba(245,158,11,0.5);
+}
+
+.delete{
+    background:linear-gradient(135deg,#ef4444,#dc2626);
+}
+
+.delete:hover{
+    box-shadow:0 0 20px rgba(239,68,68,0.5);
+}
+
+.dashboard{
+    display:grid;
+    grid-template-columns:repeat(auto-fit,minmax(240px,1fr));
+    gap:25px;
+    margin-top:40px;
+}
+
+.card{
+    background:rgba(255,255,255,0.08);
+    border:1px solid rgba(255,255,255,0.15);
+    padding:30px;
+    border-radius:20px;
+    text-align:center;
+    transition:0.4s ease;
+    backdrop-filter:blur(10px);
+}
+
+.card:hover{
+    transform:translateY(-8px);
+    box-shadow:0 0 25px rgba(56,189,248,0.3);
+}
+
+.card h2{
+    font-size:55px;
+    margin-bottom:10px;
+    color:#38bdf8;
+    text-shadow:0 0 10px rgba(56,189,248,0.5);
+}
+
+.card p{
+    font-size:20px;
+    font-weight:500;
+}
+
+table{
+    width:100%;
+    border-collapse:collapse;
+    overflow:hidden;
+    border-radius:18px;
+    margin-top:25px;
+    background:rgba(255,255,255,0.95);
+    color:#0f172a;
+}
+
+table th{
+    background:#0f172a;
+    color:white;
+    padding:18px;
+    text-align:left;
+    font-size:15px;
+}
+
+table td{
+    padding:15px;
+    border-bottom:1px solid #ddd;
+    font-size:15px;
+}
+
+table tr{
+    transition:0.3s;
+}
+
+table tr:hover{
+    background:#e2e8f0;
+}
+
+form{
+    margin-top:30px;
+    display:flex;
+    flex-direction:column;
+    gap:18px;
+}
+
+input,
+select{
+    padding:14px;
+    border:none;
+    border-radius:12px;
+    font-size:16px;
+    outline:none;
+    background:rgba(255,255,255,0.9);
+    transition:0.3s;
+}
+
+input:focus,
+select:focus{
+    box-shadow:0 0 10px rgba(56,189,248,0.5);
+    transform:scale(1.01);
+}
+
+button{
+    padding:15px;
+    border:none;
+    border-radius:12px;
+    background:linear-gradient(135deg,#38bdf8,#0ea5e9);
+    color:white;
+    font-size:17px;
+    font-weight:600;
+    cursor:pointer;
+    transition:0.3s;
+}
+
+button:hover{
+    transform:translateY(-2px);
+    box-shadow:0 0 20px rgba(56,189,248,0.5);
+}
+
+.actions{
+    display:flex;
+    gap:10px;
+}
+
+.back{
+    margin-top:20px;
+    display:inline-block;
+}
+
+::-webkit-scrollbar{
+    width:10px;
+}
+
+::-webkit-scrollbar-track{
+    background:#0f172a;
+}
+
+::-webkit-scrollbar-thumb{
+    background:#38bdf8;
+    border-radius:20px;
+}
